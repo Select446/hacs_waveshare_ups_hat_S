@@ -5,7 +5,7 @@ import os
 import voluptuous as vol
 
 from homeassistant.components.sensor import SensorEntity,PLATFORM_SCHEMA
-from homeassistant.const import DEVICE_CLASS_BATTERY, PERCENTAGE, CONF_NAME, CONF_UNIQUE_ID
+from homeassistant.const import SensorDeviceClass.BATTERY, PERCENTAGE, CONF_NAME, CONF_UNIQUE_ID
 import homeassistant.helpers.config_validation as cv
 
 
@@ -80,7 +80,7 @@ class WaveshareUpsHat(SensorEntity):
     @property
     def device_class(self):
         """Return the device class of the sensor."""
-        return DEVICE_CLASS_BATTERY
+        return SensorDeviceClass.BATTERY
 
     @property
     def state(self):
