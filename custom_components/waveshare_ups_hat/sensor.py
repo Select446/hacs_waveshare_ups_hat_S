@@ -5,7 +5,7 @@ import os
 import voluptuous as vol
 
 from homeassistant.components.sensor import SensorEntity,PLATFORM_SCHEMA
-from homeassistant.const import SensorDeviceClass BATTERY, PERCENTAGE, CONF_NAME, CONF_UNIQUE_ID
+from homeassistant.const import SensorDeviceClass, BATTERY, PERCENTAGE, CONF_NAME, CONF_UNIQUE_ID
 import homeassistant.helpers.config_validation as cv
 
 
